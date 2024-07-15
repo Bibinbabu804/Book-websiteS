@@ -1,0 +1,594 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: #ffffff;
+    min-height: 2dvb;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 10000;
+}
+
+#btn1{
+    width: 180px;
+   
+    height: 50px;
+    text-align: center;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #ffffff7e;
+    text-shadow: 4px black;
+
+text-decoration: none;
+font-size: 20PX;
+text-transform: uppercase;
+letter-spacing: 2px;
+transition: 0.6s;
+font-family: "Audiowide", sans-serif;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: 15px;
+    transition: 0.6s;
+    font-family: "Playfair Display SC", serif;
+}
+
+header ul li a:hover{
+    background: var(--bg-color);
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 10px 30px rgb(189, 139, 31);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(https://cdn.pixabay.com/photo/2015/12/04/09/13/leaves-1076307_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.home-text h1{
+    font-size: 40px;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.698);
+    font-family: "Rubik Mono One", monospace;
+    letter-spacing: 1PX;
+    margin-bottom: 10px;
+    margin-left: 90px;
+}
+.home-text p{
+    color: rgba(0, 0, 0, 0.689);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+     margin-bottom: 50px;
+     text-align: justify;
+     margin-left: 90px;
+     font-family: "Kaushan Script", cursive;
+     
+
+}
+.home-btn{
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 30px;
+    background-color: rgba(240, 248, 255, 0.517);
+    color: #000000ef;
+    border-radius: px;
+    transition: ease.40s;
+    text-decoration: none;
+    margin-left: 90px;
+    margin-top: -100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.home-btn:hover{
+    background-color: rgb(236, 156, 27);
+    transform: scale(1.1);
+}
+
+/* about */
+
+.about{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_image img{
+    width: 700px;
+
+
+}
+.about .about_tag h1{
+    font-size: 30px;
+    position: relative;
+    bottom: 35px;
+    font-family: "Oswald", sans-serif;
+
+}
+.about .about_tag p{
+    font-family: "Playball", cursive;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+/* books */
+
+.arrivals{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 35px;
+
+}
+
+.arrivals h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+
+.arrivals .arrivals_box{
+
+width: 95%;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 25px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card{
+    width: 250px;
+height: 420px;
+text-align: center;
+padding: 5px;
+border: 1px solid black;
+margin: auto 20px;
+
+}
+
+.arrivals .arrivals_box .arrivals_card:hover{
+    box-shadow: 0 0 5px rgb(87, 85, 85);
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image img{
+    width: 200px;
+    height: 280px;
+    margin: o auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+    margin-top: 15px;
+
+object-fit: cover;
+transform: ;
+object-position: center;
+
+    
+    
+
+
+}
+
+
+
+
+
+
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag p{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 18px ;
+
+}
+
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_icon{
+    color: rgba(8, 82, 240, 0.747);
+    padding: 15px;
+    margin-top: -18px;
+
+}
+
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn{
+    padding: 8px 20px;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    text-decoration: none;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* newnewsletter */
+
+body{
+    background-color: white;
+}
+
+.newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 3rem;
+    margin: 100px;
+}
+.news-text h2{
+    font-size: 35px;
+    font-family: "Audiowide", sans-serif;
+letter-spacing: 5px;
+    margin-left: 250px;
+    margin-top: 10%;
+
+}
+.news-text p{
+    font-size: 20px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.774);
+    margin-left: 250px;
+    font-family: "Arapey", serif;
+  
+    
+}
+
+.newsletter form{
+    max-width: 100%;
+    width: 300px;
+    position: relative;
+    margin-right: 100px;
+}
+
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 150px 20px 30px;
+    box-shadow: 5px 30px 56.127px rgb(55 55 55 /12%);
+    outline: none;
+    border: 2px rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-left: -380px;
+}
+.newsletter form input:last-child{
+    display: inline-block;
+    position: absolute;
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: rgb(255, 255, 255);
+    right: 6px;
+    cursor: pointer;
+    width: 100px;
+    height: 55px;
+    margin-right: 100px;
+  
+
+}
+
+
+.newsletter form input:last-child:hover{
+
+    background-color: #e09406;
+}
+
+
+/* footer/ */
+
+.end{
+    background-color: rgba(0, 0, 0, 0.918);
+   
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    padding: 20px;
+    
+}
+.list{
+    width: 25%;
+}
+.list h4{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    position: relative;
+    font-family: "Oranienbaum", serif;
+
+    margin-left: 28px;
+
+}
+
+.list h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background-color: ;
+    
+}
+.list ul li:not(:last-child){
+    margin-bottom: 16px;
+    
+}
+
+.list ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-family: "Libre Baskerville", serif;
+    text-decoration: none;
+    text-align: justify;
+    
+
+    font-family: "Oranienbaum", serif;
+
+   
+
+}
+.list ul li{
+    list-style: none;
+}
+
+
+.list ul li a:hover{
+    color: red;
+    transform: translate(14px);
+}
+
+.social a{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border-radius: 15px;
+    transition: .3s;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+.social a:hover{
+    transform: scale(1.26);
+    color: #ecb10f;
+}
+
+.end-text{
+    text-align: center;
+    padding-top: 50px;
+    color: black;
+}
+
+
+.end-text p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.459);
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+/* media quiery  */
+
+@media screen and (max-width: 400px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-sizing: border-box;  
+    }
+
+    body{
+        width: 400px;
+        margin: 0px;
+        text-align: center;
+        padding: 0px;
+        width: 400px;
+        overflow-x: hidden;
+    }
+    
+header{
+   
+}
+
+.home h1{
+    font-size: 30px;
+  margin: 20px;
+}
+
+
+
+
+
+.home p{
+
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px;
+}
+
+
+
+
+.home-btn{
+    margin-top: 20px;
+    margin-right: 10px;
+    
+}
+
+.about_image{
+    width: 400px;
+ height: 750px;
+ display: flex;
+ flex-direction: column; 
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
+#img1{
+    width: 350px;
+}
+
+.about_tag{
+    margin-top: -130%;
+    text-align: justify;
+    font-size: 10px;
+}
+
+
+.arrivals{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
